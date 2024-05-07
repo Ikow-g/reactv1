@@ -41,6 +41,24 @@ export const Projects = () => {
     },
   ];
 
+  const projects2 = [
+    {
+      title: "Business Startup",
+      description: "Design & Development",
+      imgUrl: projImg1,
+    },
+    {
+      title: "Business Startup",
+      description: "Design & Development",
+      imgUrl: projImg2,
+    },
+    {
+      title: "Business Startup",
+      description: "Design & Development",
+      imgUrl: projImg3,
+    },
+  ];
+
   return (
     <section className="project" id="projects">
       <Container>
@@ -91,13 +109,20 @@ export const Projects = () => {
                         </Row>
                       </Tab.Pane>
                       <Tab.Pane eventKey="second">
-                        <p>
+                        {/* <p>
                           Lorem ipsum dolor sit amet consectetur adipisicing
                           elit. Cumque quam, quod neque provident velit, rem
                           explicabo excepturi id illo molestiae blanditiis,
                           eligendi dicta officiis asperiores delectus quasi
                           inventore debitis quo.
-                        </p>
+                        </p> */}
+                        {
+                          projects2.map(
+                            (project, index) => {
+                              return <ProjectCard key={index} {...project}/>;
+                            }
+                          )
+                        }
                       </Tab.Pane>
                       <Tab.Pane eventKey="third">
                         <p>
