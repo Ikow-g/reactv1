@@ -6,6 +6,7 @@ import projImg3 from "../assets/img/project-img3.png";
 import colorSharp2 from "../assets/img/color-sharp2.png";
 import "animate.css";
 import TrackVisibility from "react-on-screen";
+import { ProjectCardDyn } from "./ProjectCardDyn";
 
 export const Projects = () => {
   const projects = [
@@ -56,6 +57,11 @@ export const Projects = () => {
       title: "Business Startup",
       description: "Design & Development",
       imgUrl: projImg3,
+    },
+    {
+      title: "Business Startup",
+      description: "Design & Development",
+      imgUrl: projImg1,
     },
   ];
 
@@ -117,11 +123,7 @@ export const Projects = () => {
                           inventore debitis quo.
                         </p> */}
                         {
-                          projects2.map(
-                            (project, index) => {
-                              return <ProjectCard key={index} {...project}/>;
-                            }
-                          )
+                          <ProjectCardDyn projects={projects2} />
                         }
                       </Tab.Pane>
                       <Tab.Pane eventKey="third">
