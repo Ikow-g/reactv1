@@ -44,14 +44,14 @@ export const NavBar = () => {
           </Nav>
           <span className="navbar-text">
             <div className="social-icon">
-              <a href="#">
-                <img src={navIcon1} alt="" />
+              <a href="https://www.linkedin.com/in/muh-rizal-sakti-djatmieka/">
+                <img src={navIcon1} alt="Icon1" />
               </a>
-              <a href="#">
-                <img src={navIcon2} alt="" />
+              <a href="https://facebook.com/">
+                <img src={navIcon2} alt="Icon2" />
               </a>
-              <a href="#">
-                <img src={navIcon3} alt="" />
+              <a href="https://instagram.com/">
+                <img src={navIcon3} alt="Icon3" />
               </a>
             </div>
             <button className="vd" onClick={() => console.log("connect")}>
